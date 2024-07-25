@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bgHeader {
+    background-image: url('../../assets/images/TopGrill.png');
+    background-repeat: no-repeat;
+    background-position: bottom center, 50%, 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+@layer components {
+    .HeaderMain {
+        @apply bg-whiteGray border-2 border-solid border-bordercolor rounded-full mt-[50px] flex items-center w-[176px]
+    }
+    .Operac {
+        @apply py-[25px] pl-[28px] pr-[18px] border-r-2
+    }
+    .threeline {
+        @apply py-[25px] pr-[28px] pl-[18px]
+    }
+}
+@media screen and (max-width:425px  ) {
+    .Operac {
+        @apply py-[16px] pl-[24px] pr-[20px]
+    }
+    .threeline {
+        @apply py-[16px] pr-[24px] pl-[20px]
+    }
+}

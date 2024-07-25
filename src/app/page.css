@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .homepageFirstSection {
+        @apply text-center pt-[76px] pb-[90px] w-[100%] max-w-[734px] mx-auto
+    }
+    .homepageFirstSection h2 {
+        @apply text-[64px] font-[600] leading-[76px] text-primary mb-[16px]
+    }
+    .homepageFirstSection p {
+        @apply text-[24px] font-[500] leading-[36px] text-secoundry
+    }
+    .SearchInput {
+        @apply flex items-center border-2 border-bordercolor border-solid p-[20px] text-secoundry rounded-[16px] mb-[32px]
+    }
+    .InputCategory {
+        @apply flex items-center gap-[16px] flex-wrap mb-[16px] block
+    }
+    .selectedInputCategory {
+        @apply hidden relative flex items-center gap-[8px]
+    }
+    .selectedInputCategory select {
+        @apply py-[10px] px-[16px] rounded-[8px] text-[16px] font-[500] leading-[24px] block appearance-none w-full focus:outline-none
+    }
+    .ideaIntoReality {
+        @apply py-[100px] px-[72px]
+    }
+    .ideaIntoRealitytitle h3 {
+        @apply text-[64px] leading-[76px] text-white mb-[20px] max-w-[550px]
+    }
+    .ideaIntoRealitytitle p {
+        @apply text-[20px] font-[500] leading-[30px] text-white max-w-[550px]
+    }
+    .ideaIntoRealityTitleRow{
+       @apply px-[90px] flex items-center justify-between flex-wrap
+    }
+    .CircleWork {
+        @apply rounded-full w-[250px] h-[250px] border-2 flex items-center justify-center
+    }
+    .CircleWork p{
+        @apply text-white text-[24px] leading-[36px] font-[500]
+    }
+}
+
+@media screen and (max-width:425px) {
+    main{
+      @apply px-[16px]
+    }
+    .homepageFirstSection {
+        @apply pt-[52px] pb-[24px]
+    }
+    .homepageFirstSection h2 {
+        @apply text-[40px] leading-[48px]
+    }
+    .homepageFirstSection p {
+        @apply text-[16px] leading-[24px]
+    }
+    .SearchInput {
+        @apply p-[12px]
+    }
+    .InputCategory {
+        @apply hidden
+    }
+    .selectedInputCategory {
+        @apply block
+    }
+    .ideaIntoReality {
+        @apply  px-[0px] py-[16px]
+    }
+    .ideaIntoRealitytitle {
+        @apply px-[24px]
+    }
+    .ideaIntoRealitytitle h3 {
+        @apply text-[40px] leading-[48px]
+    }
+    .ideaIntoRealitytitle p {
+        @apply text-[16px] leading-[24px]
+    }
+    .CircleWork {
+        @apply mx-auto
+    }
+    .ideaIntoRealityTitleRow {
+        @apply gap-y-[64px] px-[0px]
+    }
+}

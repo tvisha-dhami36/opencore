@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .footer {
+       @apply bg-primary w-full h-auto py-[62px] px-[86px]
+    }
+    .footerWhiteMenu {
+        @apply bg-white pt-[76px] pl-[97px] pr-[80px] bg-white rounded-[36px]
+    }
+    .firstTopSection p {
+        @apply text-[20px] leading-[30px]
+    }
+    .iconListMenu ul{
+        @apply flex items-center gap-[31px] flex-wrap
+    }
+    .iconListMenu ul li{
+        @apply bg-primarylight p-[8px] rounded-[4px]
+    }
+    .iconListMenu ul li a {
+       @apply flex items-center justify-center
+    }
+    .desktopOpenLink,
+    .opencoreLogo {
+        @apply block
+    }
+    .emailOpenlink,
+    .miniopencoreLogo {
+        @apply hidden
+    }
+    .SecoundTopSection {
+        @apply flex flex-wrap gap-x-[60px]
+    }
+
+    .SecoundTopSection ul li {
+        @apply text-[20px] font-[400] leading-[30px] text-secoundry mb-[13px]
+    }
+    .lasttextBox {
+        @apply flex items-center flex-wrap justify-between
+    }
+    .footerTitletext {
+        @apply text-[20px] !font-[400] leading-[30px] text-secoundry
+    }
+    .opencoreLogo{
+        @apply translate-y-[30px] flex items-center justify-center mt-[160px]
+    }
+}
+
+@media screen and (max-width:992px) {
+    footer{
+        @apply !py-[32px] !px-[16px]
+    }
+    .desktopOpenLink,
+    .opencoreLogo {
+        @apply hidden
+    }
+    .emailOpenlink,
+    .miniopencoreLogo {
+        @apply block
+    }
+    .footerWhiteMenu {
+        @apply px-[24px] pt-[24px]
+    }
+    .subMenu{
+        @apply mb-[24px]
+    }
+    .firstTopSection {
+        @apply text-center w-full
+    }
+    .emailOpenlink{
+        @apply flex items-center gap-[8px] border-2 border-solid border-lightgray rounded-[8px] py-[8px] px-[16px]
+    }
+    .iconListMenu,
+    .SecoundTopSection {
+        @apply py-[32px] border-b-2 border-lightgray
+    }
+    .iconListMenu ul {
+        @apply flex items-center justify-between
+    }
+    .iconListMenu ul li {
+        @apply w-[40px] h-[40px]
+    }
+    .SecoundTopSection{
+        @apply w-full flex flex-wrap gap-[64px]
+    }
+    .lasttextBox {
+        @apply block text-center
+    }
+    .footerTitletext{
+        @apply mb-[8px]
+    }
+    .opencoreLogo{
+        @apply mt-[48px]
+    }
+    .opencoreLogo svg {
+        @apply w-[350px]
+    }
+    .miniopencoreLogo {
+        @apply translate-y-[24px] flex justify-center
+    }
+}
+
+@media screen and (max-width:425px  ) {
+    .miniopencoreLogo {
+        @apply translate-y-[12px] flex justify-center
+    }
+    .emailOpenlink span,
+    .SecoundTopSection ul li,
+    .footerTitletext {
+        @apply text-[16px] leading-[24px]
+    }
+}
+@media screen and (max-width:330px  ) {
+    .SecoundTopSection{
+        @apply gap-[20px]
+    }
+    .emailOpenlink span {
+        @apply text-[12px]
+    }
+}
